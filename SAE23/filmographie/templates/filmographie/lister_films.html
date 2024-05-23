@@ -1,0 +1,14 @@
+{% extends 'filmographie/index.html' %}
+
+{% block title %}Liste des Films{% endblock %}
+
+{% block content %}
+<h1>Liste des Films</h1>
+<ul>
+    {% for film in films %}
+        <li>
+            <a href="{% url 'details_film' film.id %}">{{ film.titre }}</a> ({{ film.annee_sortie }}) - {{ film.categorie.nom }}
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
