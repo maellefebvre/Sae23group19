@@ -1,0 +1,15 @@
+{% extends 'filmographie/index.html' %}
+
+{% block title %}Catégories de Films{% endblock %}
+
+{% block content %}
+<h1>Catégories de Films</h1>
+<ul>
+    {% for categorie in categories %}
+        <li>{{ categorie.nom }}: {{ categorie.descriptif }}</li>
+        <a href="{% url 'modifier_categorie' categorie.pk %}">Modifier</a>
+        <a href="{% url 'supprimer_categorie' categorie.pk %}">Supprimer</a>
+    {% endfor %}
+</ul>
+<a href="{% url 'ajouter_categorie' %}">Ajouter une Categorie</a>
+{% endblock %}

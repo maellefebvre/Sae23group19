@@ -1,0 +1,17 @@
+{% extends 'filmographie/index.html' %}
+
+{% block title %}Liste des Acteurs{% endblock %}
+
+{% block content %}
+<h1>Liste des Acteurs</h1>
+<ul>
+    {% for acteur in acteurs %}
+        <li>{{ acteur.nom }} {{ acteur.prenom }} - Âge: {{ acteur.age }}</li>
+        <a href="{% url 'modifier_acteur' acteur.pk %}">Modifier</a>
+        <a href="{% url 'supprimer_acteur' acteur.pk %}">Supprimer</a>
+        <img src="{{ acteur.photo.url }}" alt="{{ acteur.prenom }} {{ acteur.nom }}" width="100">
+        <br><br>
+    {% endfor %}
+</ul>
+<a href="{% url 'ajouter_acteur' %}">Ajouter un Acteur</a>
+{% endblock %}

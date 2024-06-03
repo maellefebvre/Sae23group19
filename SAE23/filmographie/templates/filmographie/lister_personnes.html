@@ -1,0 +1,15 @@
+{% extends 'filmographie/index.html' %}
+
+{% block title %}Liste des Personnes{% endblock %}
+
+{% block content %}
+<h1>Liste des Personnes</h1>
+<ul>
+    {% for personne in personnes %}
+        <li>{{ personne.pseudo }} ({{ personne.type_personne }}) - Nom: {{ personne.nom }} {{ personne.prenom }} - Email: {{ personne.mail }}</li>
+        <a href="{% url 'modifier_personne' personne.pk %}">Modifier</a>
+        <a href="{% url 'supprimer_personne' personne.pk %}">Supprimer</a>
+    {% endfor %}
+</ul>
+<a href="{% url 'ajouter_personne' %}">Ajouter une Personne</a>
+{% endblock %}

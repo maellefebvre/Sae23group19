@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+{% load static %}
+    <link rel="stylesheet" href="{% static 'filmographie/styles.css' %}">
+    <title>{% block title %}Banque de Films{% endblock %}</title>
+</head>
+<body>
+    <aside id="sidebar" class='scrollable'>
+        {% block sidebar %}
+        <ul>
+            <li><a href="{% url 'index' %}">Page d'accueil</a></li>
+            <li><a href="{% url 'lister_categories' %}">Catégories</a></li>
+            <li><a href="{% url 'lister_films' %}">Films</a></li>
+            <li><a href="{% url 'lister_acteurs' %}">Acteurs</a></li>
+            <li><a href="{% url 'lister_personnes' %}">Personnes</a></li>
+            <li><a href="{% url 'ajouter_commentaire' %}">Commentaire</a></li>
+        </ul>
+        {% endblock %}
+    </aside>
+    <div class="content">
+        {% block content %}
+            <h1>Accueil : Banque de Films</h1>
+            <div class="box"><p>- Bienvenue sur la page d'accueil de notre filmographie. Cette page
+                été créée dans le cadre de la Saé 2.03 "Mettre en place une solution informatique pour l'entreprise".
+                Le sujet qui nous a été attribué est la filmographie. Il nous est demandé de fournir un interface en web dynamique.
+                Celui-ci doit comprendre de multiples critères, c'est pour cela que je vais vous présenter les fonctionnalités de la page.
+                <br>
+                <br>
+                - Sur la partie gauche de votre écran vous trouverez un bandeau de navigation entre les différentes pages, chaque bouton mène
+                a une page différente. Un bouton par thème et dans chacun il y aura un moyen d'ajouter un objet à la liste.
+                <br>
+                <br>
+                - Une fois sur la page qui liste les films, vous avez la possibilité de cliquer sur le nom du film pour pouvoir afficher les
+                détails le concernant.
+                <br>
+                <br>
+                <br>
+                Merci de nous avoir accordé votre attention, le groupe 19 vous souhaite un très bon visionnage.
+            </p></div>
+        {% endblock %}
+    </div>
+</body>
+</html>

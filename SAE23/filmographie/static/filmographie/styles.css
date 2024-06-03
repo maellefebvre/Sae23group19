@@ -1,0 +1,219 @@
+h1 {
+    color: #6f2323;
+    text-shadow: 
+          -1px -1px 0 #ffffff6d,  
+           2px -1px 0 #ffffff6d,
+          -1px  1px 0 #ffffff6d,
+           2px  1px 0 #ffffff6d;
+  }
+
+h3 {
+  color: #6f2323;
+  text-shadow: 
+        -1px -1px 0 #ffffff6d,  
+         2px -1px 0 #ffffff6d,
+        -1px  1px 0 #ffffff6d,
+         2px  1px 0 #ffffff6d;
+}
+
+h2 {
+  color: #6f2323;
+  text-shadow: 
+        -1px -1px 0 #ffffff6d,  
+         2px -1px 0 #ffffff6d,
+        -1px  1px 0 #ffffff6d,
+         2px  1px 0 #ffffff6d;
+}
+
+.content {
+    margin-left: 200px; 
+    padding: 20px;
+    text-shadow: 
+            -1px -1px 0 #000,  
+             1px -1px 0 #000,
+            -1px  1px 0 #000,
+             1px  1px 0 #000;
+    }
+    
+.title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: #c2c2c2;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px #ffffff;
+    }
+    
+.title::before,
+.title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c2c2c2;
+    margin-top: 20px;
+    }
+    
+.title::before {
+    margin-bottom: 20px;
+    }
+    
+.title::after {
+    margin-top: 10px;
+    }
+
+aside {
+    text-align: center;  
+    padding: 15px;
+    background-color: #6f2323;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 175px;
+    height: 100vh; 
+    overflow-y: auto; 
+}
+    
+      
+aside img {
+    display: block;
+    margin: auto;        
+    max-width: 90%;      
+    height: auto;
+    }
+      
+    
+    
+   
+aside + * {
+    margin-left: 100px; 
+    padding: 5px;
+    text-align: center;
+    }
+    
+    
+aside a {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+    background: linear-gradient(90deg, #6f2323 41%, #696469 100%);
+    padding: 10px 20px;
+    border: solid #5e6d7368 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
+
+aside a:hover {
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background: linear-gradient(90deg, #d14a4a 41%, #696469 100%);
+    color: #ffffff;
+    border: solid 2px #ffffff;
+}
+
+aside a:active {
+    position:relative;
+	top:1px;
+}
+    
+  
+aside a.active {
+    background-color: #6f2323;
+    }
+    
+aside ul, aside ol {
+      list-style-type: none; 
+      padding: 0;            
+      margin: 0;             
+    }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    background-image: url('wallpaperfilm.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat;
+    height: 100vh;
+    }
+
+p {
+    text-align: justify; 
+    font-family: Arial, sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    letter-spacing: 2px; 
+    text-shadow: 
+            -1px -1px 0 #000,  
+             1px -1px 0 #000,
+            -1px  1px 0 #000,
+             1px  1px 0 #000;
+    } 
+
+p2 {
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    letter-spacing: 2px; 
+    text-shadow: 
+            -1px -1px 0 #ffffff,  
+             1px -1px 0 #000,
+            -1px  1px 0 #000,
+             1px  1px 0 #000;
+}
+
+.box {
+    padding: 30px;
+    background-color: #333333a0; 
+    border: 1px solid #cccccc74;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff; 
+    font-size: 30px;
+    border-radius: 30px; /* Arrondir les bordures */
+  }
+
+ul {
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    font-size: 15px; 
+    color: #ffffff; 
+    letter-spacing: 2px; 
+    text-shadow: 
+            -1px -1px 0 #000,  
+             1px -1px 0 #000,
+            -1px  1px 0 #000,
+             1px  1px 0 #000;
+}
+
+a:hover {
+    color: #fff;
+    
+}
+
+a:link
+{
+    color:#d14a4a;
+    font-weight:normal;
+}
+a:visited
+{
+    color:rosybrown;
+    font-weight:normal;
+}
